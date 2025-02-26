@@ -10,20 +10,6 @@ namespace DungeonGame
         public int Potions { get; set; } = 1;
         public int Gold { get; set; } = 0;
         public int Arrows { get; set; } = 5;
-
-        public void UsePotion()
-        {
-            if (Potions > 0)
-            {
-                Health += 20;
-                Potions--;
-                Console.WriteLine($"Вы использовали зелье. Ваше здоровье: {Health}");
-            }
-            else
-            {
-                Console.WriteLine("У вас нет зелий!");
-            }
-        }
     }
 
     class Monster
